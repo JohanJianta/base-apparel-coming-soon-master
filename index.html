@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap"
+    rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      overflow-x: hidden;
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    .flex-middle-center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .flex-container {
+      background-image: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 16px;
+      padding: 30px;
+      flex-flow: column;
+      gap: 30px;
+    }
+
+    header {
+      padding: 20px;
+    }
+
+    .hero-mobile {
+      width: 100vw;
+    }
+
+    .text-header {
+      font-weight: 600;
+      font-size: 40px;
+      letter-spacing: 0.2em;
+      padding: 20px 20px 0px 20px;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    .text-subheader {
+      font-weight: 400;
+      text-align: center;
+      line-height: 1.6em;
+      color: hsl(0, 36%, 70%);
+    }
+
+    #soft-red {
+      color: hsl(0, 36%, 70%);
+      font-weight: 300;
+    }
+
+    .input-container {
+      width: 100%;
+      position: relative;
+    }
+
+    .text-input {
+      border-radius: 25px;
+      padding: 15px 30px;
+      font-weight: 300;
+      color: hsl(0, 6%, 24%);
+      border: solid 1.5px hsl(0, 36%, 70%, 0.5);
+      background-color: transparent;
+      width: 100%;
+    }
+
+    .text-input::placeholder {
+      color: hsla(0, 36%, 70%, 0.5);
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <img src="./images/logo.svg" alt="logo">
+  </header>
+
+  <div>
+    <img src="./images/hero-mobile.jpg" alt="hero-mobile" class="hero-mobile">
+    <div class="flex-middle-center flex-container">
+      <p class="text-header">
+        <span id="soft-red">
+          We're
+        </span>
+        coming soon
+      </p>
+      <p class="text-subheader">
+        Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date
+        with announcements and our launch deals.
+      </p>
+      <div class="flex-middle-center input-container">
+        <input type="text" class="text-input" placeholder="Email Address">
+        </input>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+  </footer>
+</body>
+
+</html>

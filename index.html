@@ -77,7 +77,8 @@
 
     .input-container {
       width: 100%;
-      position: relative;
+      display: flex;
+      justify-content: end;
     }
 
     .text-input {
@@ -93,6 +94,26 @@
     .text-input::placeholder {
       color: hsla(0, 36%, 70%, 0.5);
     }
+
+    .text-input:focus {
+      outline: none;
+      border: solid 2px hsl(0, 93%, 68%);
+    }
+
+    .icon-btn {
+      position: absolute;
+      border-radius: 25px;
+      border: none;
+      box-shadow: 0px 10px 15px 0px hsl(0, 36%, 70%, 0.5);
+      width: 65px;
+      height: 47px;
+      background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    }
+
+    .icon-btn-logo {
+      width: 12px;
+      height: 20px;
+    }
   </style>
 </head>
 
@@ -103,7 +124,7 @@
   </header>
 
   <div>
-    <img src="./images/hero-mobile.jpg" alt="hero-mobile" class="hero-mobile">
+    <img src="./images/hero-mobile.jpg" alt="hero-mobile" class="hero-mobile" />
     <div class="flex-middle-center flex-container">
       <p class="text-header">
         <span id="soft-red">
@@ -115,9 +136,11 @@
         Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date
         with announcements and our launch deals.
       </p>
-      <div class="flex-middle-center input-container">
-        <input type="text" class="text-input" placeholder="Email Address">
-        </input>
+      <div class="input-container">
+        <input type="text" class="text-input" placeholder="Email Address" />
+        <button class="icon-btn flex-middle-center">
+          <img src="./images/icon-arrow.svg" alt="icon-btn" class="icon-btn-logo" />
+        </button>
       </div>
     </div>
   </div>
